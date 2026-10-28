@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Water &amp; Communities | The Cost of a Prompt</title>
+  <meta name="description" content="How data centers use fresh water for cooling, often in drought-prone areas, and the communities that carry the cost.">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="theme-water">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main">
+      <a class="brand" href="index.html"><img class="brand-mark" src="images/logo.svg" alt=""> The Cost of a Prompt</a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Overview</a></li>
+        <li><a href="energy.html">Energy &amp; Carbon</a></li>
+        <li><a href="water.html" aria-current="page">Water &amp; Communities</a></li>
+        <li><a href="action.html">Take Action</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">Water &amp; Communities</span>
+          <h1>AI is <em>thirsty</em>, and it's drinking from local water supplies.</h1>
+          <p class="lede">Data centers use huge amounts of fresh water to keep their chips cool. Many are built in places already facing drought, and the communities next door often see few of the benefits.</p>
+        </div>
+        <img class="hero-art" src="images/water-cooling.svg" alt="Illustration of a data center piping water from a shrinking lake into cooling towers that release vapor, next to a small neighborhood">
+      </div>
+    </section>
+
+    <!-- How cooling uses water -->
+    <section class="section">
+      <div class="container split">
+        <div class="reveal">
+          <span class="eyebrow">How it works</span>
+          <h2>Why computers need water</h2>
+          <p>AI chips run extremely hot. Many data centers cool them with <strong>evaporative cooling</strong>: water absorbs the heat and evaporates into the air through cooling towers, the same way sweat cools your body. Water that evaporates is gone from the local supply.</p>
+          <p>Data centers usually need <strong>clean, fresh water</strong>, often the same drinking-quality water that homes use, because minerals and bacteria can damage equipment.</p>
+          <p>There is also an <strong>indirect</strong> water cost: many power plants that generate the electricity for data centers also use water for cooling.</p>
+        </div>
+        <div class="stats two reveal">
+          <div class="stat stat-water">
+            <div class="stat-num">~500 <small>mL</small></div>
+            <p>Water for every 10&ndash;50 chatbot responses.</p>
+            <span class="src">Li et al., 2023</span>
+          </div>
+          <div class="stat stat-water">
+            <div class="stat-num">5M <small>gal/day</small></div>
+            <p>Water a large data center can use, as much as a town of 10,000&ndash;50,000 people.</p>
+            <span class="src">EESI, 2025</span>
+          </div>
+          <div class="stat stat-water" style="grid-column:1 / -1">
+            <div class="stat-num">4.2&ndash;6.6 <small>billion m&sup3;</small></div>
+            <p>Projected water withdrawal for global AI demand in 2027, 4 to 6 times Denmark's total annual water withdrawal, or about half of the United Kingdom's.</p>
+            <span class="src">Li et al., 2023</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Drought -->
+    <section class="section section-dark">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Location matters</span>
+          <h2>Built where water is already scarce</h2>
+          <p>Companies pick data center sites for cheap land, cheap electricity, tax breaks and fast internet connections. Water availability isn't always the top concern, so many data centers end up in hot, dry regions where every gallon counts.</p>
+        </div>
+        <div class="steps reveal">
+          <div class="step">
+            <h3>Hot climates</h3>
+            <p>Hotter air means cooling systems work harder and evaporate more water, especially in summer when supplies are lowest.</p>
+          </div>
+          <div class="step">
+            <h3>Drought regions</h3>
+            <p>Places like the American Southwest have seen rapid data center growth while facing long-term drought and shrinking rivers.</p>
+          </div>
+          <div class="step">
+            <h3>Shared aquifers</h3>
+            <p>Some data centers pump groundwater from the same underground sources that farms and households rely on.</p>
+          </div>
+          <div class="step">
+            <h3>Little transparency</h3>
+            <p>Water use is often treated as a trade secret, so residents may not know how much their local data center uses.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Who pays -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Who pays the cost</span>
+          <h2>The benefits are global. The costs are local.</h2>
+          <p>Anyone in the world can use an AI tool, but the electricity demand, water use, noise and land use land on the specific community where the data center is built.</p>
+        </div>
+        <div class="split" style="align-items:start">
+          <div class="reveal">
+            <ul class="check-list">
+              <li><strong>Few long-term jobs.</strong> Data centers create many construction jobs, but once built they often employ only a few dozen people.</li>
+              <li><strong>Tax breaks.</strong> States and towns often offer large tax incentives to attract data centers, which can reduce money for schools and services.</li>
+              <li><strong>Higher utility costs.</strong> New power plants and transmission lines built for data centers can raise electricity bills for everyone on the grid.</li>
+              <li><strong>Noise and land.</strong> Neighbors have complained about constant humming from cooling equipment and the loss of farmland and open space.</li>
+              <li><strong>Unequal power.</strong> Rural and lower-income communities often have less say in these deals than large tech companies do.</li>
+            </ul>
+          </div>
+          <div class="reveal">
+            <div class="callout" style="margin-top:0">
+              <p><strong>Case study: The Dalles, Oregon.</strong> After a legal fight over public records, the city revealed in 2022 that Google's data centers used more than a quarter of the city's water. Residents learned how much water was going to the facilities only after the local newspaper sued to make it public.</p>
+            </div>
+            <!-- TODO (Owen): confirm the details of this South Carolina example and add sources -->
+            <div class="callout">
+              <p><strong>Closer to home: South Carolina.</strong> Google operates a large data center in Berkeley County, and its request to pump more groundwater from a local aquifer drew public pushback from residents and conservation groups. With more data centers being proposed across the state, these questions are coming to our own backyard.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-tight section-alt">
+      <div class="container sources">
+        <h2>Sources</h2>
+        <ol>
+          <li>Li, P., Yang, J., Islam, M. A., &amp; Ren, S. (2023). Making AI less "thirsty": Uncovering and addressing the secret water footprint of AI models. <em>arXiv</em>. https://arxiv.org/abs/2304.03271</li>
+          <li>Environmental and Energy Study Institute. (2025). <em>Data centers and water consumption</em>. https://www.eesi.org/articles/view/data-centers-and-water-consumption</li>
+          <li>Rogoway, M. (2022). Google's water use is soaring in The Dalles, records show. <em>The Oregonian</em>.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="next-band">
+      <div class="container">
+        <div>
+          <span class="eyebrow" style="color:var(--action)">Next</span>
+          <h2>So what can we actually do?</h2>
+        </div>
+        <a class="btn btn-primary" href="action.html" style="background:var(--action)">Take action &rarr;</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="index.html"><img class="brand-mark" src="images/logo.svg" alt=""> The Cost of a Prompt</a>
+          <p style="margin-top:14px;max-width:30em">A public awareness project on the environmental impact of artificial intelligence, made for college students.</p>
+        </div>
+        <div>
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Overview</a></li>
+            <li><a href="energy.html">Energy &amp; Carbon</a></li>
+            <li><a href="water.html">Water &amp; Communities</a></li>
+            <li><a href="action.html">Take Action</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Created by</h4>
+          <ul>
+            <li>Gavin Simpkins</li>
+            <li>Fernando Tello</li>
+            <li>Owen Rogers</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">ANTH 3280 Final Project &middot; Fall <span data-year>2026</span></div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Energy &amp; Carbon | The Cost of a Prompt</title>
+  <meta name="description" content="How much electricity AI uses, why data center demand is growing so fast, and the carbon emissions behind it.">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="theme-energy">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main">
+      <a class="brand" href="index.html"><img class="brand-mark" src="images/logo.svg" alt=""> The Cost of a Prompt</a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Overview</a></li>
+        <li><a href="energy.html" aria-current="page">Energy &amp; Carbon</a></li>
+        <li><a href="water.html">Water &amp; Communities</a></li>
+        <li><a href="action.html">Take Action</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">Energy &amp; Carbon</span>
+          <h1>AI is one of the fastest-growing <em>power users</em> on the grid.</h1>
+          <p class="lede">Data centers already use as much electricity as entire countries. AI is pushing that number up faster than utilities can build new power plants, and much of the new power still comes from fossil fuels.</p>
+        </div>
+        <img class="hero-art" src="images/energy-grid.svg" alt="Illustration of a power plant and wind turbine sending electricity to rows of glowing server racks">
+      </div>
+    </section>
+
+    <!-- Why AI uses so much -->
+    <section class="section">
+      <div class="container split">
+        <div class="reveal">
+          <span class="eyebrow">Why AI is so power-hungry</span>
+          <h2>Training is big. Everyday use is bigger.</h2>
+          <p><strong>Training</strong> a large AI model means running thousands of specialized chips (GPUs) nonstop for weeks or months. That is a huge one-time energy cost.</p>
+          <p><strong>Inference</strong> is what happens every time someone uses the model: each prompt, each generated image, each AI summary in a search result. One response uses a small amount of energy, but it happens billions of times a day. As AI gets built into search engines, phones, email and study apps, inference becomes the bigger share of the footprint.</p>
+          <p>Inside a data center, most of the electricity goes to the servers themselves. A large share also goes to <strong>cooling</strong>, since nearly every watt a chip uses turns into heat that has to be removed.</p>
+        </div>
+        <div class="reveal">
+          <div class="table-wrap">
+            <table class="compare">
+              <thead>
+                <tr><th>Everyday task</th><th>Approx. energy</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Traditional web search</td><td>~0.3 Wh</td></tr>
+                <tr><td>One AI chatbot response</td><td>~0.3&ndash;3 Wh</td></tr>
+                <tr><td>Generating one AI image</td><td>~3 Wh</td></tr>
+                <tr><td>LED light bulb on for 1 hour</td><td>~10 Wh</td></tr>
+                <tr><td>Fully charging a smartphone</td><td>~15 Wh</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="calc-note" style="margin-top:12px">Estimates vary by model and data center. Chatbot range from Epoch AI (2025) and de Vries (2023); image generation from Luccioni et al. (2024).</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Growth charts -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">How fast it's growing</span>
+          <h2>Demand is on track to double</h2>
+          <p>The International Energy Agency projects that data center electricity use will more than double by 2030, with AI as the main driver. In the United States, data centers' share of electricity could nearly triple in just five years.</p>
+        </div>
+
+        <div class="split" style="align-items:start">
+          <div class="figure reveal">
+            <h3>Global data center electricity use</h3>
+            <div class="bars" style="margin-top:20px">
+              <div class="bar-row">
+                <span class="bar-label">2024</span>
+                <div class="bar-track"><div class="bar-fill" data-width="44%">~415 TWh</div></div>
+              </div>
+              <div class="bar-row">
+                <span class="bar-label">2030 (proj.)</span>
+                <div class="bar-track"><div class="bar-fill" data-width="100%">~945 TWh</div></div>
+              </div>
+            </div>
+            <figcaption>For scale, 945 TWh is slightly more than all of Japan uses in a year today. Source: IEA (2025).</figcaption>
+          </div>
+
+          <div class="figure reveal">
+            <h3>Data centers' share of U.S. electricity</h3>
+            <div class="bars" style="margin-top:20px">
+              <div class="bar-row">
+                <span class="bar-label">2018</span>
+                <div class="bar-track"><div class="bar-fill" data-width="16%">1.9%</div></div>
+              </div>
+              <div class="bar-row">
+                <span class="bar-label">2023</span>
+                <div class="bar-track"><div class="bar-fill" data-width="37%">4.4%</div></div>
+              </div>
+              <div class="bar-row">
+                <span class="bar-label">2028 (proj.)</span>
+                <div class="bar-track"><div class="bar-fill range" data-width="100%">6.7&ndash;12%</div></div>
+              </div>
+            </div>
+            <figcaption>The 2028 bar shows the high end of the projected range. Source: Lawrence Berkeley National Laboratory (2024).</figcaption>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Carbon -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">The carbon connection</span>
+          <h2>Clean energy can't keep up, so fossil fuels fill the gap</h2>
+          <p>The climate impact of AI depends on where the electricity comes from. A data center running on wind and solar has a much smaller footprint than one running on coal or natural gas.</p>
+        </div>
+        <div class="stats three reveal">
+          <div class="stat">
+            <div class="stat-num">24/7</div>
+            <p>Data centers need power around the clock. Utilities often meet that demand with natural gas plants, because sun and wind aren't always available.</p>
+          </div>
+          <div class="stat">
+            <div class="stat-num">Delayed</div>
+            <p>Some utilities have delayed retiring fossil fuel plants or proposed new gas plants to keep up with new data center demand.</p>
+          </div>
+          <div class="stat">
+            <div class="stat-num">Rising</div>
+            <p>Several major tech companies have reported that their total emissions went up in recent years as they expanded AI, despite their climate pledges.</p>
+          </div>
+        </div>
+        <div class="callout reveal">
+          <p><strong>The key point:</strong> the same AI prompt can have a very different carbon footprint depending on <em>when</em> and <em>where</em> it runs. That's why our call to action includes pushing companies and universities to power data centers with clean energy and to be transparent about it.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-tight section-dark">
+      <div class="container">
+        <p class="pull-quote reveal">"The cloud" isn't in the sky. It's a building plugged into <span>your</span> power grid.</p>
+      </div>
+    </section>
+
+    <section class="section-tight section-alt">
+      <div class="container sources">
+        <h2>Sources</h2>
+        <ol>
+          <li>International Energy Agency. (2025). <em>Energy and AI</em>. https://www.iea.org/reports/energy-and-ai</li>
+          <li>Shehabi, A., et al. (2024). <em>2024 United States data center energy usage report</em>. Lawrence Berkeley National Laboratory.</li>
+          <li>You, J. (2025). <em>How much energy does ChatGPT use?</em> Epoch AI.</li>
+          <li>de Vries, A. (2023). The growing energy footprint of artificial intelligence. <em>Joule, 7</em>(10), 2191&ndash;2194.</li>
+          <li>Luccioni, S., Jernite, Y., &amp; Strubell, E. (2024). Power hungry processing: Watts driving the cost of AI deployment? <em>Proceedings of the 2024 ACM Conference on Fairness, Accountability, and Transparency</em>.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="next-band">
+      <div class="container">
+        <div>
+          <span class="eyebrow" style="color:var(--water)">Next</span>
+          <h2>Water &amp; the communities next door</h2>
+        </div>
+        <a class="btn btn-primary" href="water.html" style="background:var(--water)">Continue &rarr;</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="index.html"><img class="brand-mark" src="images/logo.svg" alt=""> The Cost of a Prompt</a>
+          <p style="margin-top:14px;max-width:30em">A public awareness project on the environmental impact of artificial intelligence, made for college students.</p>
+        </div>
+        <div>
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Overview</a></li>
+            <li><a href="energy.html">Energy &amp; Carbon</a></li>
+            <li><a href="water.html">Water &amp; Communities</a></li>
+            <li><a href="action.html">Take Action</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Created by</h4>
+          <ul>
+            <li>Gavin Simpkins</li>
+            <li>Fernando Tello</li>
+            <li>Owen Rogers</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">ANTH 3280 Final Project &middot; Fall <span data-year>2026</span></div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" role="img" aria-labelledby="t">
+  <title id="t">A college campus powered by solar panels and wind turbines, with students and a phone showing a pledge checklist</title>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d1fae5"/>
+      <stop offset="1" stop-color="#ecfdf5"/>
+    </linearGradient>
+    <linearGradient id="hill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4ade80"/>
+      <stop offset="1" stop-color="#16a34a"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1e3a8a"/>
+      <stop offset="1" stop-color="#0f172a"/>
+    </linearGradient>
+    <clipPath id="c"><rect width="600" height="420" rx="24"/></clipPath>
+  </defs>
+  <g clip-path="url(#c)">
+    <rect width="600" height="420" fill="url(#sky)"/>
+    <circle cx="500" cy="80" r="40" fill="#fde047"/>
+    <circle cx="500" cy="80" r="58" fill="#fde047" opacity=".25"/>
+
+    <!-- wind turbines -->
+    <g stroke="#ffffff" stroke-linecap="round">
+      <g transform="translate(90 120)">
+        <path d="M0 0 V150" stroke-width="5"/>
+        <g stroke-width="5">
+          <path d="M0 0 V-50"/><path d="M0 0 L43 25"/><path d="M0 0 L-43 25"/>
+          <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="7s" repeatCount="indefinite"/>
+        </g>
+      </g>
+      <g transform="translate(170 150)">
+        <path d="M0 0 V120" stroke-width="4"/>
+        <g stroke-width="4">
+          <path d="M0 0 V-40"/><path d="M0 0 L35 20"/><path d="M0 0 L-35 20"/>
+          <animateTransform attributeName="transform" type="rotate" from="40" to="400" dur="9s" repeatCount="indefinite"/>
+        </g>
+      </g>
+    </g>
+
+    <!-- hills -->
+    <path d="M0 270 C120 230 220 250 320 240 S500 220 600 250 V420 H0z" fill="url(#hill)"/>
+
+    <!-- campus building -->
+    <g transform="translate(250 150)">
+      <rect x="0" y="40" width="200" height="110" fill="#f8fafc"/>
+      <path d="M-10 44 L100 0 L210 44z" fill="#e2e8f0"/>
+      <!-- solar on roof -->
+      <path d="M20 36 L100 4 L180 36z" fill="url(#panel)"/>
+      <g stroke="#60a5fa" stroke-width="1" opacity=".7">
+        <path d="M60 20 L60 36 M100 4 V36 M140 20 V36 M40 28 H160"/>
+      </g>
+      <g fill="#94a3b8">
+        <rect x="20" y="58" width="12" height="80"/><rect x="58" y="58" width="12" height="80"/>
+        <rect x="130" y="58" width="12" height="80"/><rect x="168" y="58" width="12" height="80"/>
+      </g>
+      <rect x="84" y="88" width="32" height="62" fill="#16a34a" opacity=".85"/>
+    </g>
+
+    <!-- ground solar array -->
+    <g transform="translate(470 290)">
+      <path d="M0 40 L20 0 H110 L90 40z" fill="url(#panel)"/>
+      <g stroke="#60a5fa" stroke-width="1" opacity=".7"><path d="M10 20 H100 M43 0 L33 40 M66 0 L56 40 M89 0 L79 40"/></g>
+      <path d="M45 40 V56 M70 40 V56" stroke="#475569" stroke-width="3"/>
+    </g>
+
+    <!-- path -->
+    <path d="M350 300 C340 340 300 370 260 420 H330 C350 380 380 340 380 300z" fill="#f1f5f9" opacity=".8"/>
+
+    <!-- students -->
+    <g transform="translate(120 300)">
+      <circle cx="0" cy="0" r="12" fill="#7c4a24"/>
+      <path d="M-16 50 Q-16 18 0 16 Q16 18 16 50z" fill="#0ea5e9"/>
+      <rect x="12" y="20" width="12" height="20" rx="3" fill="#f59e0b"/>
+    </g>
+    <g transform="translate(170 306)">
+      <circle cx="0" cy="0" r="11" fill="#f1c27d"/>
+      <path d="M-14 44 Q-14 16 0 14 Q14 16 14 44z" fill="#6366f1"/>
+    </g>
+
+    <!-- phone with pledge -->
+    <g transform="translate(26 200)">
+      <rect width="72" height="130" rx="12" fill="#0f172a"/>
+      <rect x="6" y="12" width="60" height="106" rx="6" fill="#f8fafc"/>
+      <g fill="none" stroke="#16a34a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M14 32 l4 4 l8 -8"/><path d="M14 56 l4 4 l8 -8"/><path d="M14 80 l4 4 l8 -8"/>
+      </g>
+      <g fill="#cbd5e1">
+        <rect x="32" y="29" width="26" height="6" rx="3"/><rect x="32" y="53" width="22" height="6" rx="3"/>
+        <rect x="32" y="77" width="26" height="6" rx="3"/><rect x="14" y="98" width="44" height="10" rx="5" fill="#16a34a"/>
+      </g>
+    </g>
+  </g>
+</svg>
